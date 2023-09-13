@@ -1,0 +1,21 @@
+.steps {
+  background-color: var(--gray);
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.steps h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.steps .step-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

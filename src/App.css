@@ -1,0 +1,50 @@
+:root {
+  --black: #222222;
+  --primary: #47e4c2;
+  --gray: #f2f1ef;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Thin";
+  src: url("./assets/fonts/Lato/Lato-Thin.ttf") format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato-Light", sans-serif;
+  background-color: var(--gray);
+}
+
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 600px) {
+    max-width: 600px;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 900px;
+  }
+}
+
+.container-left {
+  margin-left: 0;
+}

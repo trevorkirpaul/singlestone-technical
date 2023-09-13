@@ -1,0 +1,8 @@
+.nav-bar {
+  background-color: var(--black);
+  padding: 1.5rem 1rem;
+}
+
+.nav-bar img {
+  width: 150px;
+}
