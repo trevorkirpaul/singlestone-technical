@@ -1,5 +1,9 @@
 # Singlestone Technical
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b9597e39-7d92-4c84-a5eb-63fb7a0f17dd/deploy-status)](https://app.netlify.com/sites/fluffy-concha-7a0652/deploys)
+
+## [Live Site](https://fluffy-concha-7a0652.netlify.app/)
+
 ## Dev Quickstart
 
 > Ensure you have the env file set up correctly
