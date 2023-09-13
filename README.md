@@ -46,7 +46,9 @@ You can run the test runner by executing the following command in your console:
 pnpm test
 ```
 
-> It should be noted that the script is using the `watchAll` flag to make development easier.
+> ⚠️ Warning: If your tests fail to run, you might need to edit `src/hooks/useFetchSteps.ts` and remove
+> the 'import' sytax from line 5. For the sake of tests, you can
+> replace it with a dummy string
 
 ## Developer Notes
 
