@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 
 import type { StepToRender, Step } from "../types";
 
-const URL = import.meta.env.VITE_STEPS_ENDPOINT;
+// const URL = import.meta.env.VITE_STEPS_ENDPOINT;
+const URL = "123";
 
 /**
  * This function returns the latest `versionContent`
@@ -12,8 +13,8 @@ const URL = import.meta.env.VITE_STEPS_ENDPOINT;
  */
 export const getLatestVersionedContent = (stepsResponse: Step[]) => {
   const getLatestDate = (versionedContent: Step["versionContent"]) => {
-    return versionedContent.sort(
-      (a, b) => new Date(b.effectiveDate) - new Date(a.effectiveDate)
+    return versionedContent.sort((a, b) =>
+      b.effectiveDate.localeCompare(a.effectiveDate)
     )[0];
   };
 
@@ -27,7 +28,7 @@ export const getLatestVersionedContent = (stepsResponse: Step[]) => {
         body,
       };
     })
-    .sort((a, b) => a.stepNumber - b.stepNumber);
+    .sort((a, b) => a.stepNumber.localeCompare(b.stepNumber));
 };
 
 /**
