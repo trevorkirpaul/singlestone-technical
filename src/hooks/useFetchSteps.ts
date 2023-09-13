@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 
 import type { StepToRender, Step } from "../types";
 
-// const URL = import.meta.env.VITE_STEPS_ENDPOINT;
-const URL = "123";
+const URL = import.meta.env.VITE_STEPS_ENDPOINT;
 
 /**
  * This function returns the latest `versionContent`
